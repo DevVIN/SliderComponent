@@ -28,7 +28,6 @@ gulp.task('sass', function() {
 // uglify task
 gulp.task('js', function() {
     gulp.src(path.JS_DEV)
-    .pipe(concat(path.OUT))
 	.pipe(uglify())
     .pipe(gulp.dest(path.JS))
     .pipe( notify({
